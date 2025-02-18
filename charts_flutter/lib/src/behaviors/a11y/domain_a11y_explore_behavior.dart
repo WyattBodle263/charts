@@ -108,9 +108,9 @@ class DomainA11yExploreBehavior<D> extends ChartBehavior<D> {
       exploreModeEnabledAnnouncement == o.exploreModeEnabledAnnouncement &&
       exploreModeDisabledAnnouncement == o.exploreModeDisabledAnnouncement;
 
-  @override
+@override
 int get hashCode {
-  return hashValues(
+  return Object.hash(
     minimumWidth,
     vocalizationCallback,
     exploreModeTrigger,
